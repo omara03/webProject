@@ -1,0 +1,462 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  /* background-color: #C8C8C8; */
+  background-color: #36454f;
+}
+.bg {
+    background-image: url("../Images/ADMIN/ADMIN.jpg");
+    width: 100%;
+  height: 110vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.text1 {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    color: #F5F5F5;
+    margin-right: 20px;
+}
+.container {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin: 0 20px 300px 20px;
+} 
+.USERS {
+
+    flex-direction: column;
+    color: white;
+    border: 2px solid #f60;
+    border-radius: 20px;
+    background: rgba( 255, 255, 255, 0.1 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 2px );
+    -webkit-backdrop-filter: blur( 2px );
+    border-radius: 10px;
+}
+.USERS form {
+background: rgba(red, green, blue, 0.8);
+}
+.PRODUCTS {
+    display: flex;
+    flex-direction: column;
+  color: white;
+    border: 2px solid #f60;
+    border-radius: 20px;
+    background: rgba( 255, 255, 255, 0.1 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 2px );
+    -webkit-backdrop-filter: blur( 2px );
+    border-radius: 10px;
+}
+.PRODUCTS1 {
+    flex-direction: column;
+    color: white;
+    border: 2px solid #f60;
+    border-radius: 20px;
+    background: rgba( 255, 255, 255, 0.1 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 2px );
+    -webkit-backdrop-filter: blur( 2px );
+    border-radius: 10px;
+}
+.PRODCUTS2 {
+    flex-direction: column;
+  color: white;
+    border: 2px solid #f60;
+    border-radius: 20px;
+    background: rgba( 255, 255, 255, 0.1 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 2px );
+    -webkit-backdrop-filter: blur( 2px );
+    border-radius: 10px;
+}
+.USERS h2 {
+    margin-left: 95px;
+}
+.viewAccounts input{
+    margin-left: 70px;
+    width: 50%;
+    padding: 10px;
+    border: none;
+    border-radius: 50px;
+    background-color: #f60;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 15px
+    
+}
+.viewAccounts input:hover {
+    background-color: #ff751a;
+  }
+
+.deleteUserByEmail {
+    display: flex;
+    flex-direction: column;
+   
+}
+.deleteusertext {
+    margin-bottom: 2%;
+    margin-left: 38px;
+   
+}
+.deleteUserByEmail input[type="email"] {
+   margin-bottom: 2%;
+margin-right: 50px;
+
+}
+.deleteUserByEmail input[type="submit"] {
+    width: 50%;
+    padding: 10px;
+    border: none;
+    border-radius: 50px;
+    background-color: #f60;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 15px;
+    margin-left: 24%;
+}
+.deleteUserByEmail input[type="submit"]:hover {
+    background-color: #ff751a;
+}
+.deleteUserByEmail input[type="email"]{
+    border-radius: 5px;
+    height: 25px;
+    background-color: transparent;
+    color: white;
+    border:2px solid #f60;
+   margin-left: 50px;
+}
+#email::placeholder {
+    color: white;
+  }
+  .editUserByEmail input[type="email"]{
+    border-radius: 5px;
+    height: 25px;
+    background-color: transparent;
+    color: white;
+    border:2px solid #f60;
+   margin-left: 50px;
+  }
+ 
+  .editUserByEmail input[type="text"]{
+    border-radius: 5px;
+    height: 25px;
+    background-color: transparent;
+    color: white;
+    border:2px solid #f60;
+   margin-left: 50px;
+  }
+  .editUserByEmail input[type="password"]{
+    border-radius: 5px;
+    height: 25px;
+    background-color: transparent;
+    color: white;
+    border:2px solid #f60;
+   margin-left: 50px;
+  }
+  .editUserByEmail input[type="submit"]{
+  width: 50%;
+  padding: 10px;
+  border: none;
+  border-radius: 50px;
+  background-color: #f60;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  margin-bottom: 15px;
+  margin-left: 24%;
+  }
+  .editUserByEmail input[type="submit"]:hover{
+  background-color: #ff751a;
+}
+  .addProduct input {
+    border-radius: 5px;
+    height: 25px;
+    background-color: transparent;
+    color: white;
+    border:2px solid #f60;
+  }
+  .addProduct textarea {
+    border-radius: 5px;
+    height: 25px;
+    background-color: transparent;
+    color: white;
+    border:2px solid #f60;
+  }
+  .addProduct input[type="text"] {
+    margin-left: 110px;
+  }
+  .addProduct input[type="number"] {
+    margin-left: 110px;
+  }
+  .addProduct input[type="radio"] {
+    margin-left: 5px;
+  }
+  .addProduct label[for="men"] {
+    margin-left: 70px;
+    margin-top: 5px;
+  }
+  .addProduct label[for="women"] {
+    margin-left: 10px;
+    margin-top: 5px;
+  }
+  .addProduct button[type="button"] {
+    width: 50%;
+    padding: 10px;
+    border: none;
+    border-radius: 50px;
+    background-color: #f60;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 15px;
+    margin-left: 27%;
+  }
+  .addProduct button[type="button"]:hover {
+    background-color: #ff751a;
+  }
+  .edittext1 {
+    margin-left: 50px;
+  }
+  .edittext2 {
+    margin-left: 50px;
+  }
+  .addproducttext {
+    margin-left: 110px;
+  }
+  #fullname::placeholder {
+    color: white;
+  }
+  #Address::placeholder {
+    color: white;
+  }
+  #emailEdit::placeholder {
+    color: white;
+  }
+  #password::placeholder {
+    color: white;
+  }
+  #name::placeholder{
+    color: white;
+  }
+  #previousprice::placeholder {
+    color: white;
+  }
+  #price::placeholder {
+    color: white;
+  }
+  #description::placeholder {
+    color: white;
+  }
+  #color::placeholder {
+    color: white;
+  }
+  #men{
+    accent-color: #f60;;
+  }
+  #women{
+    accent-color: #f60;;
+  }
+  #clothingType{
+    accent-color: #f60;;
+  }
+  #shoesType{
+    accent-color: #f60;;
+  }
+  #basket{
+    accent-color: #f60;;
+  }
+  #football{
+    accent-color: #f60;;
+  }
+  #tennis{
+    accent-color: #f60;;
+  }
+  .deleteProduct h2 {
+    margin-left: 5px;
+  }
+  .deleteProduct span {
+    margin-left: 2px;
+    
+  }
+  .deleteProduct input[type="text"] {
+    margin-left: 40px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    height: 25px;
+    background-color: transparent;
+    color: white;
+    border:2px solid #f60;
+  }
+  #productName::placeholder {
+    color: white;
+  }
+  .deleteProduct input[type="submit"] {
+    width: 55%;
+    padding: 10px;
+    border: none;
+    border-radius: 50px;
+    background-color: #f60;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    margin-left: 60px;
+  }
+  .deleteProduct input[type="submit"]:hover {
+    background-color: #ff751a;
+  }
+  .editProductByName h2 {
+margin-left: 10px;
+  }
+ .edittext5 {
+  margin-left: 0px;
+ }
+ .editProductByName input[type="text"] {
+  margin-left: 18px;
+  margin-top: 5px;
+  /* margin-bottom: 5px; */
+  border-radius: 5px;
+  height: 25px;
+  background-color: transparent;
+  color: white;
+  border:2px solid #f60;
+ }
+ #Name::placeholder {
+  color: white;
+ }
+ #Previousprice::placeholder {
+  color: white;
+ }
+ #Price::placeholder {
+  color: white;
+ }
+ #Frontface::placeholder {
+  color: white;
+ }
+ #Backface::placeholder {
+  color: white;
+ }
+#Description::placeholder {
+  color: white;
+ }
+ #Color::placeholder {
+  color: white;
+ }
+ #Type::placeholder {
+  color: white;
+ }
+ #Sport::placeholder {
+  color: white;
+ }
+ #Gender::placeholder {
+  color: white;
+ }
+ .editProductByName input[type="submit"] {
+  width: 60%;
+  padding: 10px;
+  border: none;
+  border-radius: 50px;
+  background-color: #f60;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  margin-left: 40px;
+  margin-bottom: 10px;
+}
+.editProductByName input[type="submit"]:hover {
+  background-color: #ff751a;
+}
+.edittext2 {
+  margin-left: 60px;
+}
+.addProduct label[for="clothes"] {
+  margin-left: 120px;
+  margin-top: 4px;
+}
+.addProduct label[for="shoes"] {
+  margin-left: 10px;
+  margin-top: 5px;
+}
+.addProduct label[for="Basketball"] {
+  margin-left: 70px;
+  margin-top: 5px;
+}
+.addProduct label[for="Football"] {
+  margin-left: 10px;
+  margin-top: 5px;
+}
+.addProduct label[for="Tennis"] {
+  margin-left: 10px;
+  margin-top: 5px;
+}
+.menorwomen {
+  display: flex;
+  flex-direction: row;
+}
+
+.clothingorshoes {
+  display: flex;
+  flex-direction: row;
+}
+.addProduct label[for="Frontface"]{
+margin-left: 10px;
+}
+.addProduct label[for="Backface"]{
+  margin-left: 10px;
+  }
+  .viewproduct h2 {
+    margin-left: 11px;
+  }
+  .viewproduct input[type="submit"]{
+    width: 65%;
+    margin-left: 40px;
+  }
+  @media (max-width: 1250px){
+    .bg{
+      background-image: url("wrong path");
+    }
+  }
+  @media (max-width: 510px){
+    .PRODUCTS1{
+      height: 300px;
+    }
+  }
+  @media (max-width: 425px){
+    .PRODUCTS1{
+      height: 300px;
+    }
+  }
+  @media (max-width: 375px){
+    .PRODUCTS{
+      width: 300px;
+    }
+    .addProduct label[for="men"]{
+      margin-left: 0px;
+    }
+    .addProduct label[for="clothes"]{
+      margin-left: 0px;
+    }
+    .addProduct label[for="Basketball"]{
+      margin-left: 0px;
+    }
+    .addProduct input[type="text"]{
+      margin-left: 50px;
+    }
+    .addProduct input[type="number"]{
+      margin-left: 50px;
+    }
+    .addproducttext{
+      margin-left: 50px;
+    }
+  }
