@@ -1,0 +1,69 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  background-color: #F5F5F5;
+}
+.bg {
+    background-image: url("/Images/ADMIN/d4947145b1fb8ed58052ee5bf04107eb.png");
+    width: 100%;
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.formcheckOut {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* margin-right: 50px; */
+  color: white;
+    border: 2px solid black;
+    border-radius: 20px;
+    background: rgba( 255, 255, 255, 0.1 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 2px );
+    -webkit-backdrop-filter: blur( 2px );
+    border-radius: 10px;
+    width: 20%;
+}
+.formcheckOut input[type="text"]{
+    border-radius: 5px;
+    height: 25px;
+    background-color: transparent;
+    color: white;
+    border:2px solid black;
+   /* margin-left: 50px; */
+}
+#cardnumber::placeholder {
+    color: white;
+}
+#expirydate::placeholder {
+    color: white;
+}
+#cvv::placeholder {
+    color: white;
+}
+#name1::placeholder {
+    color: white;
+}
+.formcheckOut button[type="submit"] {
+    width: 50%;
+    padding: 10px;
+    border: none;
+    border-radius: 50px;
+    background-color: black;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    margin-left: 21%;
+  }
+  .formcheckOut button[type="submit"]:hover {
+    background-color: grey;
+  }
