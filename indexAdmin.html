@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NIKE ADMIN</title>
+    <link rel="icon" href="Images/Logo/NIKE LOGO.png" />
+    <link rel="stylesheet" href="CSS/indexAdmin.css">
+</head>
+<body> 
+    <div class="bg">
+    <div class="text1">
+<H1>ADMIN CONTROL PANEL</H1>
+</div>
+    <div class="container">
+        <div class="USERS">
+            <div class="text2">
+            <h2>USERS</h2>
+        </div>
+        <div class="viewAccounts">
+
+            <form action="viewUsers.php" method="post">
+
+                <input type="submit" value="View all users">
+            </form>            
+        </div>
+       
+             <div class="deleteUserByEmail">
+                <span class="deleteusertext">USER'S EMAIL TO DELETE</span>
+            <form action="deleteUsers.php" method="post">
+
+                <input type="email" placeholder="Email" id="email" name = "Email" required><br>
+
+                <input type="submit" value="Delete user"><br><br>
+            </form>
+
+
+        </div>
+
+
+        <div class="editUserByEmail">
+            <label class="edittext1">USER'S EMAIL TO EDIT</label>
+            <form action="editUser.php" method="post">
+                <input type="email" placeholder="Email" id="email" name = "Email" required><br><br>
+                <label class="edittext2">Edit Here</label><br>
+                <input type="text" placeholder="Full Name" id="fullname" name = "fullname"><br>
+                <input type="text" placeholder="Address" id="Address" name = "address"><br>
+                <input type="email" placeholder="Email" id="emailEdit" name = "emailEdit"><br>
+                <input type="password" name="Password" id="password" placeholder="Password"/><br><br>
+                <input type="submit" value="Edit user"><br>
+            </form>
+
+
+        </div>
+        </div>
+
+        
+
+
+        <div class="PRODUCTS">
+        <div class="addProduct">
+            <h2 class="addproducttext">ADD PRODUCT</h2>
+            <form action="submitForm()" id="productForm" method="POST" enctype="multipart/form-data">
+                <input type="text" placeholder="Name" id="name" name="name" required><br>
+                <input type="number" placeholder="Previous Price" id="previousprice" name="previousprice"><br>
+                <input type="number" placeholder="Price" id="price" name="price" required><br>
+                <label for="Frontface">Frontface Image:</label>
+                <input type="file" id="Frontface" name="Frontface" required><br>
+                <label for="Backface">Backface Image:</label>
+                <input type="file" id="Backface" name="Backface" required><br>
+                <textarea placeholder="Description" id="description" name="description" rows="5" cols="35" required></textarea><br>
+                <input type="text" placeholder="Color" id="color" name="color" required><br><br>
+         
+                <!-- Radio buttons for gender selection -->
+                <div class="menorwomen">
+                <label for="men">Men's product</label>
+                <input type="radio" id="men" name="gender" value="men"> 
+        
+                <label for="women">Women's product</label>
+                <input type="radio" id="women" name="gender" value="women">
+            </div>
+                <div class="clothingorshoes">
+                <label for="clothes">Clothing</label>
+                <input type="radio" id="clothingType" name="type" value="Clothing"> <br>
+        
+                <label for="shoes">Shoes</label>
+                <input type="radio" id="shoesType" name="type" value="Shoes"> <br>
+                 </div>
+                <div clas="basketballorfootballortennis" style="display: flex;">
+                <label for="Basketball">Basketball</label>
+                <input type="radio" id="basket" name="sport" value="Basketball"> <br>
+
+                <label for="Football">Football</label>
+                <input type="radio" id="football" name="sport" value="Football"> <br>
+        
+                <label for="Tennis">Tennis</label>
+                <input type="radio" id="tennis" name="sport" value="Tennis"> <br><br><br>
+                </div>
+                <button type="button" onclick="submitForm()">Add product</button>
+            </form>
+        </div>
+       
+
+
+    </div>
+    <div class="PRODUCTS1">
+    <div class="deleteProduct">
+        <H2>DELETE PRODUCT</H2>
+        <span class="deleteProduct">PRODUCT'S NAME TO DELETE</span>
+    <form action="deleteProduct.php" method="post">
+
+        <input type="text" placeholder="Product Name" id="productName" name = "productName" required><br>
+
+        <input type="submit" value="Delete product"><br><br>
+    </form>
+     <div class="viewproduct">
+    <form action="viewProducts.php" method="post">
+        <h2>VIEW PRODUCTS</h2>
+        <input type="submit" value="View all products">
+    </form>  
+       </div> 
+</div>
+
+
+
+</div>
+<div class="PRODCUTS2">
+    <div class="editProductByName">
+        <H2>EDIT PRODUCT</H2>
+        <label class="edittext5">PRODUCT'S NAME TO EDIT</label>
+        <form action="editProduct.php" method="post">
+            <input type="text" placeholder="Product Name" id="productName" name = "productName" required><br><br>
+            <label class="edittext2">EDIT HERE</label><br>
+            <input type="text" placeholder="Name" id="Name" name = "Name"><br>
+            <input type="text" placeholder="Previous Price" id="Previousprice" name = "Previousprice"><br>
+            <input type="text" placeholder="Price" id="Price" name = "Price"><br>
+            <input type="text" name="Frontface" id="Frontface" placeholder="Frontface"><br>
+            <input type="text" placeholder="Backface" id="Backface" name = "Backface"><br>
+            <input type="text" placeholder="Description" id="Description" name = "Description"><br>
+            <input type="text" placeholder="Color" id="Color" name = "Color"><br>
+            <input type="text" placeholder="Type" id="Type" name = "Type"><br>
+            <input type="text" placeholder="Sport" id="Sport" name = "Sport"><br>
+            <input type="text" placeholder="Gender" id="Gender" name = "Gender"/><br><br>
+            <input type="submit" value="Edit product"><br>
+        </form>
+    
+    
+    </div>
+</div>
+    <script>
+        
+        
+    function submitForm() {
+        // Get the selected radio button value
+        var gender = document.querySelector('input[name="gender"]:checked');
+        var type = document.querySelector('input[name="type"]:checked');
+        var sport = document.querySelector('input[name="sport"]:checked');
+
+
+
+
+        if (document.getElementById('name').value.trim() == "")
+        {
+            alert("Please type the name of product.");
+        }
+        else if(document.getElementById('price').value.trim() == "")
+        {
+            alert("Please type the price of product.");
+        }
+        else if(document.getElementById('Frontface').value.trim() == "")
+        {
+            alert("Please enter the path of product's frontface image.");
+        }
+        else if(document.getElementById('Backface').value.trim() == "")
+        {
+            alert("Please enter the path of product's backface image.");
+        }
+        else if(document.getElementById('description').value.trim() == "")
+        {
+            alert("Please type the description of product.");
+        }
+        else if(document.getElementById('color').value.trim() == "")
+        {
+            alert("Please type the color of product.");
+        }
+        else
+        {
+            
+            // Set the form action based on the selected gender
+            if (gender) {
+                // alert(gender.value);
+                if(type){
+                    if(sport){
+                        document.getElementById('productForm').action = gender.value === 'men' ? 'addProductMen.php' : 'addProductWomen.php';
+                        document.getElementById('productForm').submit();
+                    }else {
+                alert("Please select a sport.");
+                }
+                
+            } else {
+                alert("Please select a type.");
+        }
+        }else {
+                alert("Please select a gender.");
+        }
+    }
+}
+
+
+
+    </script>
+    </div>
+</div>
+</body>
+</html>
